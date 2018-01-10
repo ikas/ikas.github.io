@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Hello, world!"
 date:   2018-01-09 22:37:37 +0000
 categories: blog
