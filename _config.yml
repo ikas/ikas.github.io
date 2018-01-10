@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: REPLACE WITH AWESOME TITLE
+title: Replace With Awesome Title
 email: henriquejcpacheco@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hey, I am Henrique Pacheco, software engineer @Bsolus, Braga, Portugal.
+  Hey, I am Henrique Pacheco, software engineer @ Bsolus, Braga, Portugal.
   I enjoy reading, having a beer with my friends, and I love coding with my girlfriend Mariana Capelo.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ikas.gihub.io" # the base hostname & protocol for your site, e.g. http://example.com
