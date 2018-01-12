@@ -329,21 +329,20 @@ a {
 }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
   border-top: solid 1px $hr-border-color;
   text-align: center;
+  padding: 1rem;
 
   @include large {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   @include medium {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   @include small {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -352,6 +351,33 @@ a {
   font-weight: bold;
 }
 
-.site-footer-credits {
-  color: $blockquote-text-color;
+
+.header-nav {
+  .main-nav {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+
+    li:first-child {
+      margin-right: auto;
+    }
+
+    a {
+      color: $theme-default;
+      display: block;
+      padding: 15px 40px;
+      text-decoration: none;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+
+    .logo {
+      background: $theme-default;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
 }
