@@ -97,15 +97,15 @@ a {
   background-size: cover;
 
   @include large {
-    padding: 5rem 6rem;
+    padding: 6rem 6rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 4rem 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
   }
 
   .project-name, .project-tagline {
@@ -348,7 +348,6 @@ a {
 
 .site-footer-owner {
   display: block;
-  font-weight: bold;
 }
 
 
@@ -366,8 +365,19 @@ a {
     a {
       color: $theme-default;
       display: block;
-      padding: 15px 40px;
       text-decoration: none;
+
+      @include large {
+        padding: 15px 40px;
+      }
+
+      @include medium {
+        padding: 15px 40px;
+      }
+
+      @include small {
+        padding: 15px 20px;
+      }
 
       &.active {
         text-decoration: underline;
@@ -390,8 +400,19 @@ a {
 
 .article-container {
   flex-grow: 1;
-  width: 33%;
   margin-bottom: 20px;
+
+  @include large {
+    width: 33%;
+  }
+
+  @include medium {
+    width: 33%;
+  }
+
+  @include small {
+    width: 100%;
+  }
 }
 
 .article-image {
@@ -409,4 +430,16 @@ a {
 .article-short-desc {
   display: block;
   font-size: 14px;
+}
+
+.article-author {
+  color: $theme-default;
+}
+
+.article-date {
+  font-size: 14px;
+}
+
+.article-meta-info {
+  margin-bottom: 25px;
 }
