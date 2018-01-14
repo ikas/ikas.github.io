@@ -10,7 +10,7 @@ Hey there :)
 
 This post marks the beginning of my personal blog.
 
-I've been working with some interesting topics lately, and I realized that I didn't have a means of sharing my points of view and insights across the Web. Due to that, **one of my resolutions for the year of 2018 was to start blogging**. Posts will be mostly technical *- I know I know, I am a geek -* and among other topics, I'll focus on:
+I've been working with some interesting topics lately, and I realized that I didn't have a good way of sharing my points of view and insights across the Web. Due to that, **one of my resolutions for the year of 2018 was to start blogging**. Posts will be mostly technical *- I know I know, I am a geek -* and among other topics, I'll focus on:
 * my professional or personal projects (for instance, how I created this blog).
 * interesting technology that I have come across or decided to try.
 * reviews of books that I have read.
