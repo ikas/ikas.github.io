@@ -381,3 +381,32 @@ a {
     }
   }
 }
+
+
+.profile-pic-container {
+  text-align: center;
+}
+
+
+.article-container {
+  flex-grow: 1;
+  width: 33%;
+  margin-bottom: 20px;
+}
+
+.article-image {
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.article-title {
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.article-short-desc {
+  display: block;
+  font-size: 14px;
+}

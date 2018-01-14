@@ -1,8 +1,7 @@
 ---
 title: About me
+layout: about
 ---
-
-{% include profile_pic.html %}
 
 Hey, I am Henrique Pacheco. I'm 24 years old, and I was born (and currently live) in Braga, Portugal.
 
