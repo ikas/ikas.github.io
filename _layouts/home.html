@@ -3,22 +3,22 @@ layout: default
 ---
 
 <section class="page-header">
-    <h1 class="project-name">Welcome to {{ site.title | default: site.github.repository_name }}!</h1>
-    <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+   <h1 class="project-name">Welcome to {{ site.title | default: site.github.repository_name }}!</h1>
+   <div class="dash"></div>
+   <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 </section>
 
 <div class="main-content">
     <h2>Latest posts</h2>
-
     <div class="latest-posts-container">
         {% for post in site.posts limit:3 %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <div class="article-container">
-                <div style="background-image: url('{{ post.image | default: '/assets/img/header.jpg' }}');" class="article-image"></div>
-                <span class="article-title">{{ post.title }}</span>
-                <span class="article-short-desc">{{ post.short_description }}</span>
-            </div>
-        </a>
+          <div class="article-container">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              <div style="background-image: url('{{ post.image | default: '/assets/img/header.jpg' }}');" class="article-image"></div>
+              <span class="article-title">{{ post.title }}</span>
+              <span class="article-short-desc">{{ post.short_description }}</span>
+            </a>
+          </div>
         {% endfor %}
     </div>
 </div>

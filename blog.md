@@ -1,6 +1,6 @@
 ---
-title: Blog
-layout: default
+title: Contact
+layout: contact
 ---
 
-Latest blog posts
+Hey, I would love for you to get in touch with me!
