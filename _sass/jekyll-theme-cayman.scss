@@ -85,6 +85,31 @@ a {
       margin-left: 0;
     }
   }
+
+  &.btn-icon {
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $theme-default;
+    }
+
+    @include large {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    @include medium {
+      height: 2.7rem;
+      width: 2.7rem;
+    }
+
+    @include small {
+      height: 2.7rem;
+      width: 2.7rem;
+    }
+  }
 }
 
 .page-header {
@@ -358,7 +383,7 @@ a {
 
 
 .header-nav {
-  border-bottom: 1px solid $theme-default;
+  border-bottom: 5px solid $theme-default;
   position: fixed;
   width: 100%;
   background-color: $header-bg-color;
@@ -377,6 +402,7 @@ a {
       color: $theme-default;
       display: block;
       text-decoration: none;
+      text-transform: uppercase;
 
       @include large {
         padding: 12px 30px;
@@ -398,7 +424,6 @@ a {
     .logo {
       background: $theme-default;
       color: white;
-      text-transform: uppercase;
     }
   }
 }
@@ -406,6 +431,11 @@ a {
 
 .profile-pic-container {
   text-align: center;
+
+  img.profile-image {
+    border: 5px solid $theme-default;
+    border-radius: 150px;
+  }
 }
 
 
@@ -470,5 +500,5 @@ a {
 }
 
 .site-content {
-  padding-top: 49px;
+  padding-top: 53px;
 }
