@@ -3,7 +3,7 @@ title:  "My Dev Work Environment"
 date:   2018-01-20 11:00:00 +0000
 author: "Henrique Pacheco"
 layout: post
-short_description: "What difference the Unix terminal makes!"
+short_description: "The power of a Unix terminal is still unreachable!"
 ---
 
 Hey :)
