@@ -29,7 +29,7 @@ layout: default
         {% for post in site.posts limit:3 %}
           <div class="article-container">
             <a href="{{ site.baseurl }}{{ post.url }}">
-              <div style="background-image: url('{{ post.image | default: '/assets/img/header.jpg' }}');" class="article-image"></div>
+              <div style="background-image: url('{{ post.image | default: '/assets/img/header.jpg' | absolute_url }}');background-position: bottom;" class="article-image"></div>
               <span class="article-title">{{ post.title }}</span>
               <span class="article-short-desc">{{ post.short_description }}</span>
             </a>
