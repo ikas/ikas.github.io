@@ -16,8 +16,7 @@
 title: Pacheco's
 email: henriquejcpacheco@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hey, I am Henrique Pacheco, software engineer @ Bsolus, Braga, Portugal.
-  This is my blog, where I post updates about the projects I'm involved and my views on broad life topics.
+  I am Henrique Pacheco, 24 years old, software engineer. I love coding and I blog as a hobby.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://henriquepacheco.com" # the base hostname & protocol for your site, e.g. http://example.com
 

@@ -5,7 +5,9 @@ $medium-breakpoint: 42em !default;
 // Headers
 $header-heading-color: #fff !default;
 $header-bg-color: white !default;
-$theme-default: #0e352f !default;
+$theme-default: $color5 !default;
+$theme-secondary: $color4 !default;
+$theme-white: white !default;
 
 // Text
 $body-text-color: #606c71 !default;
