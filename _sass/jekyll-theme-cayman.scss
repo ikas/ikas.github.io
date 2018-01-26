@@ -29,7 +29,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: $color1;
 }
@@ -84,18 +84,18 @@ a {
     }
 
     @include large {
-      height: 50px;
-      width: 50px;
+      height: 3.5rem;
+      width: 3.5rem;
     }
 
     @include medium {
-      height: 45px;
-      width: 45px;
+      height: 3rem;
+      width: 3rem;
     }
 
     @include small {
-      height: 45px;
-      width: 45px;
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
 }
@@ -106,7 +106,7 @@ a {
   background: linear-gradient($theme-default, $theme-secondary);
 
   @include large {
-    padding: 15% 5rem;
+    padding: 10rem 4rem;
   }
 
   @include medium {
@@ -114,7 +114,7 @@ a {
   }
 
   @include small {
-    padding: 6rem 2rem;
+    padding: 5rem 2rem;
   }
 
   .project-name, .project-tagline {
@@ -161,11 +161,21 @@ a {
       font-size: 1rem;
     }
   }
+}
 
-  .dash {
-    border-bottom: 3px solid white;
-    margin: 20px 38%;
-    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+// Font awesome icons
+i.fa {
+
+  @include medium {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    vertical-align: 0;
+  }
+
+  @include small {
+    font-size: 1.3333rem;
+    line-height: .75rem;
+    vertical-align: 0;
   }
 }
 
@@ -348,34 +358,10 @@ h6 {
   }
 }
 
-.site-footer {
-  border-top: 1px solid $color1;
-  padding: 15px;
-  padding-left: 15%;
-
-  @include large {
-    font-size: 0.9rem;
-  }
-
-  @include medium {
-    font-size: 0.9rem;
-  }
-
-  @include small {
-    font-size: 0.8rem;
-  }
-}
-
-.site-footer-owner {
-  display: block;
-}
-
-
 .header-nav {
-  // border-bottom: 2px solid $theme-white;
   position: fixed;
   width: 100%;
-  background-color: $theme-default;
+  background-color: $theme-secondary;
 
   .main-nav {
     display: flex;
@@ -392,27 +378,11 @@ h6 {
       display: block;
       text-decoration: none;
       text-transform: uppercase;
-
-      @include large {
-        padding: 12px 30px;
-      }
-
-      @include medium {
-        padding: 12px 30px;
-      }
+      padding: 1rem 2rem;
 
       @include small {
-        padding: 12px 15px;
+        padding: 1rem 1rem;
       }
-
-      &.active {
-        text-decoration: underline;
-      }
-    }
-
-    .logo {
-      background: $theme-default;
-      color: white;
     }
   }
 }
@@ -462,13 +432,19 @@ h6 {
 .social-icons {
   display: flex;
   justify-content: left;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   & > * {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    margin-left: 15px;
-    margin-right: 15px;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @include small {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+    }
 
     &:first-of-type {
       margin-left: 0;
@@ -483,7 +459,7 @@ h6 {
 
 // Home containers
 .home-container {
-  margin: 100px 15%;
+  margin: 4rem 4rem;
   display: flex;
 
   @include small {
@@ -492,8 +468,8 @@ h6 {
   }
 
   .home-title {
-    flex:1;
-    margin-right: 15px;
+    flex: 1;
+    margin-right: 1rem;
 
     @include small {
       margin-right: 0;
@@ -526,8 +502,8 @@ h6 {
   }
 
   .home-content {
-    margin-left: 15px;
-    margin-top: 5px;
+    margin-left: 1rem;
+    margin-top: 2.7rem;
 
     @include large {
       flex: 2;
@@ -542,42 +518,59 @@ h6 {
       margin-left: 0;
     }
 
-    p {
+    span.justify-text {
       text-align: justify;
+
+      p:first-of-type {
+        margin-top: 0;
+      }
     }
 
     &.latest-posts-container {
       display: flex;
-      margin-top: 25px;
+
+      @include medium {
+        flex-direction: column;
+      }
+
+      @include small {
+        flex-direction: column;
+      }
 
       .article-container {
         width: 50%;
 
-        @include small {
+        @include medium {
           width: 100%;
+          margin-left: 0;
+          margin-right: 0;
         }
 
-        a {
-          &:hover {
-            text-decoration: none;
-          }
+        @include small {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
 
-          .article-image {
-            height: 150px;
-            background-position: center;
-            background-size: cover;
-          }
+        &:hover {
+          text-decoration: none;
+        }
 
-          .article-title {
-            display: block;
-            margin-top: 10px;
-            text-transform: uppercase;
-          }
+        .article-image {
+          height: 150px;
+          background-position: center;
+          background-size: cover;
+        }
 
-          .article-short-desc {
-            display: block;
-            font-size: 13px;
-          }
+        .article-title {
+          display: block;
+          margin-top: 10px;
+          text-transform: uppercase;
+        }
+
+        .article-short-desc {
+          display: block;
+          font-size: 13px;
         }
       }
     }
@@ -594,10 +587,35 @@ h6 {
   }
 
   .profile-item {
-    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
 
-    p {
-      display: inline;
+    .contact-text {
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
     }
+  }
+}
+
+
+// Footer
+.site-footer {
+  border-top: 1px solid $color1;
+  padding: 0.5rem;
+  text-align: center;
+
+  @include large {
+    font-size: 0.9rem;
+  }
+
+  @include medium {
+    font-size: 0.9rem;
+  }
+
+  @include small {
+    font-size: 0.8rem;
   }
 }

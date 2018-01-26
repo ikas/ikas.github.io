@@ -38,9 +38,11 @@ layout: default
   </div>
 
   <div class="home-content">
-    <p>Hey, I am Henrique Pacheco. I'm 24 years old, and I was born (and currently live) in Braga, Portugal.</p>
-    <p>I graduated from Universidade do Minho in Software Engineering (feb 2018), and I have also been working as a software engineer at <a href="http://www.bsolus.pt/pt/">Bsolus</a> (since sep 2014), an e-commerce company based in Braga. Here, I've been part of an amazing team building <a href="http://www.beevo.com/">Beevo</a>, an product tailored for medium-large sized companies. This experience has given me the oportunity to work on projects such as the <a href="https://uni.unicer.pt/">Super Bock Group</a> online portal - the largest beverage distributor in Portugal -, or in partnership with the Swedish team of <a href="https://www.commerz.com/">Commerz</a>, a company based in Malmo, Sweden - more details of the project <a href="https://www.commerz.com/projekt/stockholms-elbolag">here</a>.</p>
-    <p>In my free time I enjoy reading, having a beer with my friends, and I love coding with my girlfriend Mariana Capelo.</p>
+    <span class="justify-text">
+        <p>Hey, I am Henrique Pacheco. I'm 24 years old, and I was born (and currently live) in Braga, Portugal.</p>
+        <p>I graduated from Universidade do Minho in Software Engineering (feb 2018), and I have also been working as a software engineer at <a href="http://www.bsolus.pt/pt/">Bsolus</a> (since sep 2014), an e-commerce company based in Braga. Here, I've been part of an amazing team building <a href="http://www.beevo.com/">Beevo</a>, an product tailored for medium-large sized companies. This experience has given me the oportunity to work on projects such as the <a href="https://uni.unicer.pt/">Super Bock Group</a> online portal - the largest beverage distributor in Portugal -, or in partnership with the Swedish team of <a href="https://www.commerz.com/">Commerz</a>, a company based in Malmo, Sweden - more details of the project <a href="https://www.commerz.com/projekt/stockholms-elbolag">here</a>.</p>
+        <p>In my free time I enjoy reading, having a beer with my friends, and I love coding with my girlfriend Mariana Capelo.</p>
+    </span>
   </div>
 </div>
 
@@ -52,13 +54,11 @@ layout: default
 
   <div class="home-content latest-posts-container">
     {% for post in site.posts limit:3 %}
-      <div class="article-container">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <div style="background-image: url('{{ post.image | default: '/assets/img/header.jpg' | absolute_url }}');background-position: bottom;" class="article-image"></div>
-          <span class="article-title">{{ post.title }}</span>
-          <span class="article-short-desc">{{ post.short_description }}</span>
-        </a>
-      </div>
+      <a class="article-container" href="{{ site.baseurl }}{{ post.url }}">
+        <div style="background-image: url('{{ post.image | default: '/assets/img/header.jpg' | absolute_url }}');background-position: bottom;" class="article-image"></div>
+        <span class="article-title">{{ post.title }}</span>
+        <span class="article-short-desc">{{ post.short_description }}</span>
+      </a>
     {% endfor %}
   </div>
 </div>
@@ -72,13 +72,13 @@ layout: default
   <div class="home-content">
     <div class="contact-info">
       <a href="mailto:henriquejcpacheco@gmail.com" class="profile-item">
-        <i class="fa fa-lg fa-fw fa-envelope-o"></i>
-        <p>henriquejcpacheco [at] gmail [dot] com</p>
+        <i class="fa fa-lg fa-envelope-o"></i>
+        <span class="contact-text">henriquejcpacheco [at] gmail [dot] com</span>
       </a>
 
       <a class="profile-item" href="https://www.google.pt/maps/place/Braga/">
-        <i class="fa fa-lg fa-fw fa-map-marker"></i>
-        <p>Braga, Portugal</p>
+        <i class="fa fa-lg fa-map-marker"></i>
+        <span class="contact-text">Braga, Portugal</span>
       </a>
     </div>
   </div>
