@@ -2,6 +2,7 @@
 @import "rouge-github";
 @import "palette";
 @import "variables";
+@import "animations";
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
