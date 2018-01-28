@@ -5,6 +5,8 @@ author: "Henrique Pacheco"
 layout: post
 image: assets/img/sapiens.jpg
 short_description: "A magnificent journey through the history of humankind"
+categories: Books
+published: false
 ---
 
 TODO !!

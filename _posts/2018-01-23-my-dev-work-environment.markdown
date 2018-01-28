@@ -5,6 +5,7 @@ author: "Henrique Pacheco"
 layout: post
 image: assets/img/devenv.jpg
 short_description: "The power of a Unix terminal is still unreachable!"
+categories: Tech
 ---
 
 Hey :)
@@ -18,7 +19,7 @@ As I didn't want to shatter my access to the Office suite, the first thing I did
 After installing Ubuntu and some required software, I was able to pretty much emulate the same environment I had on Windows. The stack I currently use is based on:
 * **[MySQL Workbench][workbench-link]** for database access and management - though I'm thinking about trying [DBeaver][dbeaver-link], since it seems a good open-source alternative and Workbench has some irritating bugs in the Ubuntu version.
 
-* **[Visual Studio Code][vscode-link]** as my preferred text editor - I've been practicing Vim at home, but I'm not proficient enough so that it would be productive to use it (_yet_). 
+* **[Visual Studio Code][vscode-link]** as my preferred text editor - I've been practicing Vim at home, but I'm not proficient enough so that it would be productive to use it (_yet_).
 
 * **[Guake Terminal][guake-link]** as terminal emulator, flavoured with [Oh-My-Zsh][ohmyzsh-link]. Guake is a nice terminal emulator for Ubuntu that does not appear as a normal application when `Alt+Tab`ing, but it pops up at the pressing of a keystroke, which is very useful.
 Oh-My-Zsh is also fantastic due to the amount of features, shortcuts and customizations it provides - I just love the Git shortcuts such as `ga` instead of `git add`, `gst` instead of `git status` or `gc` instead of `git commit`.
@@ -29,7 +30,7 @@ I also use occasionally **[Postman][postman-link]** for testing or interacting w
 
 I'm very happy with the changes I made to my setup. I tried some alternatives, such as running an Unix distro as a virtual machine on Windows, or the Windows Linux Subsystem, but the truth is that there is still _nothing_ that matches the power of the Unix terminal.
 
-I'll keep improving my tech stack, but in the mean time, any feedback is appreciated. Next week, I'll share my input on the latest book I read. 
+I'll keep improving my tech stack, but in the mean time, any feedback is appreciated. Next week, I'll share my input on the latest book I read.
 
 Stay tuned and see you next time!
 

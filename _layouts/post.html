@@ -13,6 +13,9 @@ layout: default
   <div class="article-meta-info">
     <span class="article-author">{{ page.author }}</span><br>
     <span class="article-date">{{ page.date | date_to_string }}</span>
+    <div class="article-categories">
+      {{ page.categories }}
+    </div>
   </div>
   {{ content }}
 </div>
