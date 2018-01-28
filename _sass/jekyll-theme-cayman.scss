@@ -2,7 +2,6 @@
 @import "rouge-github";
 @import "palette";
 @import "variables";
-@import "animations";
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -504,7 +503,10 @@ h6 {
 
   .home-content {
     margin-left: 1rem;
-    margin-top: 2.7rem;
+
+    & > * {
+      margin-top: 2.7rem;
+    }
 
     @include large {
       flex: 2;
@@ -519,7 +521,7 @@ h6 {
       margin-left: 0;
     }
 
-    span.justify-text {
+    .justify-text {
       text-align: justify;
 
       p:first-of-type {
