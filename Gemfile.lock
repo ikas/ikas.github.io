@@ -237,6 +237,7 @@ DEPENDENCIES
   github-pages
   jekyll (~> 3.6.0)
   jekyll-feed (~> 0.6)
+  jekyll-sitemap
   jekyll-theme-awesome
   tzinfo-data
 

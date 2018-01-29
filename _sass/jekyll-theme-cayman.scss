@@ -78,9 +78,11 @@ a {
     border: none;
     border-radius: 50%;
     background-color: $theme-white;
+    color: $theme-secondary;
 
     &:hover {
-      background-color: $theme-default;
+      color: $theme-white;
+      background-color: $theme-secondary;
     }
 
     @include large {
@@ -165,17 +167,21 @@ a {
 
 // Font awesome icons
 i.fa {
+  vertical-align: 0;
+
+  @include large {
+    font-size: 1.6em;
+    line-height: 1.1em;
+  }
 
   @include medium {
     font-size: 1.5rem;
     line-height: 1.5rem;
-    vertical-align: 0;
   }
 
   @include small {
     font-size: 1.3333rem;
     line-height: .75rem;
-    vertical-align: 0;
   }
 }
 
@@ -606,8 +612,8 @@ h6 {
 
 // Footer
 .site-footer {
-  border-top: 1px solid $theme-default;
-  color: $theme-default;
+  border-top: 1px solid $theme-secondary;
+  color: $theme-secondary;
   padding: 0.5rem;
   text-align: center;
 
