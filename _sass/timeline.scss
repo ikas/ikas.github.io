@@ -10,6 +10,11 @@ $dot-diameter: 10px;
   width:100%;
   padding: 6rem 4rem;
   position: relative;
+
+  @include small {
+    padding: 4rem 1rem;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -24,6 +29,11 @@ $dot-diameter: 10px;
     display: table;
     clear: both;
   }
+
+  a {
+    color: $theme-white;
+    text-decoration: underline;
+  }
 }
 
 .entry {
@@ -37,26 +47,46 @@ $dot-diameter: 10px;
     padding-right: $gutter;
     text-align: right;
     position: relative;
+    overflow-x: visible;
+
+    @include small {
+      padding-right: 0.4rem;
+      text-align: left;
+    }
+
     &:before {
       content: '';
       position: absolute;
       width: $dot-diameter;
       height: $dot-diameter;
-      border: $border-width solid $theme-secondary;
+      border: $border-width solid $color2;
       background-color:#fff;
       border-radius:100%;
       top: 15%;
       right: -$dot-diameter;
+
+      @include small {
+        right: -27px;
+      }
       z-index: 99;
     }
     h3 {
       margin: 0;
-      font-size: 2rem;
       color: $theme-white;
       font-weight: bold;
+
+      font-size: 2rem;
+
+      @include small {
+        font-size: 1.6rem
+      }
     }
     p {
       margin: 0;
+
+      @include small {
+        font-size: 1rem;
+      }
     }
   }
   .body {
@@ -64,6 +94,11 @@ $dot-diameter: 10px;
     float: right;
     width: 66%;
     padding-left: $gutter;
+
+    @include small {
+      font-size: 1rem;
+    }
+
     p {
       line-height: 1.4em;
       &:first-child {

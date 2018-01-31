@@ -469,6 +469,10 @@ h6 {
   margin: 4rem 4rem;
   display: flex;
 
+  @include medium {
+    flex-direction: column;
+  }
+
   @include small {
     flex-direction: column;
     margin: 2rem 1rem;
@@ -509,7 +513,8 @@ h6 {
   }
 
   .home-content {
-    margin-left: 1rem;
+    margin-left: 0;
+    flex: 1;
 
     & > * {
       margin-top: 2.7rem;
@@ -517,14 +522,10 @@ h6 {
 
     @include large {
       flex: 2;
+      margin-left: 1rem;
     }
 
     @include medium {
-      flex: 1;
-    }
-
-    @include small {
-      flex: 1;
       margin-left: 0;
     }
 
@@ -538,13 +539,10 @@ h6 {
 
     &.latest-posts-container {
       display: flex;
+      flex-direction: column;
 
-      @include medium {
-        flex-direction: column;
-      }
-
-      @include small {
-        flex-direction: column;
+      @include large {
+        flex-direction: row;
       }
 
       .article-container {
@@ -552,8 +550,6 @@ h6 {
 
         @include medium {
           width: 100%;
-          margin-left: 0;
-          margin-right: 0;
         }
 
         @include small {
