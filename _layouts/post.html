@@ -5,7 +5,7 @@ layout: default
 {% include header.html %}
 
 <div style="background-image: url('{{ page.image | default: '/assets/img/header.jpg' | absolute_url }}');background-position:bottom;background-repeat:no-repeat;background-size:cover;" class="page-header">
-  <h1 class="project-name">{{ page.title }}</h1>
+  <h1 class="project-name post-title">{{ page.title }}</h1>
   <h2 class="project-tagline">{{ page.short_description }}</h2>
 </div>
 
@@ -17,5 +17,8 @@ layout: default
       {{ page.categories }}
     </div>
   </div>
-  {{ content }}
+
+  <div class="article-content">
+    {{ content }}
+  </div>
 </div>

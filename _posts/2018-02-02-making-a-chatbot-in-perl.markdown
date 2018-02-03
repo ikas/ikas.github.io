@@ -1,0 +1,81 @@
+---
+title:  "Carson, the bot: implementing a chatbot"
+date:   2018-02-02 17:00:00 +0000
+author: "Henrique Pacheco"
+layout: post
+image: assets/img/carson.jpg
+short_description: "How we implemented a chatbot that helped us on our daily tasks."
+categories: Tech
+published: false
+---
+
+
+Hey :) me and my girfriend Mariana Capelo, we have been attending Natural Language Processing classes at University of Minho, and as a practical project, we decided to implement a simple chatbot.
+
+Our main goal was to make a command line tool that is able, first of all, to **understand natural language**. It was important also that it was helpful in our day to day lives, and at the same time, **extensible**, so that we could iterate incrementing its features. Our main inspiration was Mr. Carson, the butler on the TV series [Downtown Abbey][freeling-link], and for that reason, we called the developed Perl module **Carson::Bot**.
+
+
+# Bot's architecture overview
+
+Skipping ahead the headaches of creating a functional Makefile and a proper Perl package, the main architecture of the system can be illustrated as follows:
+
+![Carson Bot architecture]({{ "/assets/img/bot_arch.png" | absolute_url }})
+
+
+### Parsing the script
+
+The initial step involves parsing the bot's script. This is an XML file that defines which intents the current bot can understand, as well as how it will answer to them. This enables the possibility of having mulitple "personalities" (per se) using the same code basis.
+
+
+### Decoding the intent
+
+After that, the program loops infinitly waiting for user input - assuming as an example, let's say that we want to know the weather in Braga. For that purpose, we would write "weather in Braga" and hope that the bot can fullfil our intent.
+
+As soon as the "Enter" key is pressed, our input string is decoded against the script data in order to understand if the bot can fullfill the user's intent. This involves searching for keywords (such as "weather") in the input string.
+
+
+### Handling the intent
+
+If a valid keyword is found, Carson will use the handler associated with the keyword found to fullfil the request. In the example, this involves calling the **Carson::Handlers::Weather** module, providing the location (Braga).
+
+The handler returns a response with a set of parameters that can be used to build a valid response for the intent - for instance, the returned response in this case would include the parameters `TEMPERATURE` and `DESCRIPTION`.
+
+
+### Building and sending the response
+
+The final step is to use, once again, the script file to fetch an appropriate response template:
+
+{% highlight text %}
+Currently in <<LOCATION>>, the weather is <<DESCRIPTION>> with <<TEMPERATURE>>ºC.
+{% endhighlight %}
+
+This template is then interpolated with the parameters provided by the handler to build the repsonse that will be sent to the user.
+
+
+# Frames and slots
+
+Handlers may require parameters so that they can properly fullfil the user's intent. It is the case of the weather handler, which requires the location so that it can properly provide the weather somewhere.
+
+Thus, enters the concepts of **frames and slots**.
+
+*A frame is a set of slots that a certain handler requires to be filled so that it can fullfil the user intent.*
+
+The frame associated with a handler can be defined in the script, and also customized on a "personality" basis. But the really cool part here is that if a given slot is not fulfilled, the handler can require follow up questions to find out the missing values for its slots.
+
+That means that we can configure Carson so that if we request the weather and we don't provide the location ("tell me the weather"), he will ask us where do we want to know the weather, and only when he has the value for that slot he will require the handler to fullfil the request.
+
+![Carson Bot demonstration]({{ "/assets/img/carson.gif" | absolute_url }})
+
+This implementation gives a huge flexibility to set up more complex handlers such as scheduling flights or ask for market stock prices.
+
+
+# All in all
+
+There are still some improvements to be made, such as including some more powerful ways of processing the user intents (for example, using [Freeling][freeling-link] to interpret the user input), or adding support for timed events. But all in all, for its first version, Carson provides a flexible and scalable structure for a simple chatbot, that can be easily extended.
+
+I hope you have enjoyed this post! You can install the Perl module in your own machine to test it (download via CPAN), or you can view the source code here.
+
+TODO missing CPAN and source code links
+
+[freeling-link]: http://nlp.lsi.upc.edu/freeling/node/1
+[da-link]: http://www.imdb.com/title/tt1606375/
