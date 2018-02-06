@@ -632,4 +632,21 @@ h6 {
   }
 }
 
+div.image-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  img {
+    margin: auto;
+  }
+
+  span.image-caption {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
 @import "timeline";
