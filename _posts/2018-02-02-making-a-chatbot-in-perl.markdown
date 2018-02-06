@@ -6,18 +6,17 @@ layout: post
 image: assets/img/carson.jpg
 short_description: "How we implemented a chatbot that helped us on our daily tasks."
 categories: Tech
-published: false
 ---
 
 
 Hey :) me and my girfriend Mariana Capelo, we have been attending Natural Language Processing classes at University of Minho, and as a practical project, we decided to implement a simple chatbot.
 
-Our main goal was to make a command line tool that is able, first of all, to **understand natural language**. It was important also that it was helpful in our day to day lives, and at the same time, **extensible**, so that we could iterate incrementing its features. Our main inspiration was Mr. Carson, the butler on the TV series [Downtown Abbey][freeling-link], and for that reason, we called the developed Perl module **Carson::Bot**.
+Our main goal was to make a command line tool that was able, first of all, to **understand natural language** (i.e. sentences can be written in a command-line tool resembling human language). It was important also that it was helpful in our day to day lives, and at the same time, **extensible**, so that we could iterate incrementing its features. Our main inspiration was Mr. Carson, the butler on the TV series [Downtown Abbey][downtown-link], and for that reason, we called the developed Perl module **Carson::Bot**.
 
 
 # Bot's architecture overview
 
-Skipping ahead the headaches of creating a functional Makefile and a proper Perl package, the main architecture of the system can be illustrated as follows:
+Skipping ahead the headaches of two newbies trying to create a functional Makefile and a properly-structured Perl package, the main architecture of the system can be illustrated as follows:
 
 ![Carson Bot architecture]({{ "/assets/img/bot_arch.png" | absolute_url }})
 
@@ -73,9 +72,10 @@ This implementation gives a huge flexibility to set up more complex handlers suc
 
 There are still some improvements to be made, such as including some more powerful ways of processing the user intents (for example, using [Freeling][freeling-link] to interpret the user input), or adding support for timed events. But all in all, for its first version, Carson provides a flexible and scalable structure for a simple chatbot, that can be easily extended.
 
-I hope you have enjoyed this post! You can install the Perl module in your own machine to test it (download via CPAN), or you can view the source code here.
+I hope you have enjoyed this post! You can take a look at the source code of Mr. Carson [here][bitbucket-link].
 
 TODO missing CPAN and source code links
 
 [freeling-link]: http://nlp.lsi.upc.edu/freeling/node/1
-[da-link]: http://www.imdb.com/title/tt1606375/
+[bitbucket-link]: https://bitbucket.org/marianacapelo/spln/src/3a48aceb6c14fb4559a4f78b7b3b5db904218cae/pl2/?at=master
+[downtown-link]: http://www.imdb.com/title/tt1606375/
