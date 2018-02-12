@@ -1,4 +1,4 @@
 <div class="image-container">
-    <img src="{{ include.url | absolute_url }}" alt="{{ include.description }}" />
+    <img src="{{ include.url | absolute_url }}" alt="{{ include.description }}" width="{{ include.width | 100% }}" />
     <span class="image-caption">{{ include.description }}</span>
 </div>
