@@ -89,6 +89,7 @@ a {
     @include large {
       height: 3.5rem;
       width: 3.5rem;
+      overflow-y: hidden;
     }
 
     @include medium {
@@ -308,10 +309,12 @@ h6 {
   }
 
   blockquote {
-    padding: 0 1rem;
-    margin-left: 0;
+    padding: 0 4rem;
+    margin: 2rem;
     color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    border-left: 0.3rem solid $blockquote-border-color;
+    text-align: center;
+    font-size: 1.3rem;
 
     > :first-child {
       margin-top: 0;

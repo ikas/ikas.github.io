@@ -14,7 +14,8 @@ $theme-soft-bg: $color3 !default;
 // Text
 $body-text-color: #606c71 !default;
 $body-link-color: $theme-default;
-$blockquote-text-color: #819198 !default;
+$blockquote-text-color: $theme-secondary !default;
+$blockquote-border-color: $theme-default !default;
 
 // Code
 $code-bg-color: #cccccc !default;
