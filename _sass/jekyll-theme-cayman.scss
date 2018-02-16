@@ -104,6 +104,11 @@ a {
   }
 }
 
+b,
+strong {
+  color: $theme-default;
+}
+
 .page-header {
   color: $theme-white;
   height: 100%;
@@ -309,7 +314,7 @@ h6 {
   }
 
   blockquote {
-    padding: 0 4rem;
+    padding: 0 2rem;
     margin: 2rem;
     color: $blockquote-text-color;
     border-left: 0.3rem solid $blockquote-border-color;
