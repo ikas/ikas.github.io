@@ -19,7 +19,7 @@ Our main goal was to make a command line tool that was able to, first of all, **
 
 Skipping ahead the headaches of two rookies trying to create a functional Makefile and a properly-structured Perl module, the architecture of the system can be illustrated as follows:
 
-{% include image.html url="/assets/img/bot_arch.png" description="Carson Bot architecture." %}
+{% include image.html url="/assets/img/posts/bot_arch.png" description="Carson Bot architecture." %}
 
 
 ### Parsing the script
@@ -64,7 +64,7 @@ The frame associated with a handler can be defined in the script, and also custo
 
 That means that we can configure Carson so that if we request the weather and we don't provide the location ("tell me the weather"), he will ask us where do we want to know the weather. Only after having the value for that slot will the handler be requested to fullfil the intent.
 
-{% include image.html url="/assets/img/carson.gif" description="Mr. Carson telling us that it is cold in London." %}
+{% include image.html url="/assets/img/posts/carson.gif" description="Mr. Carson telling us that it is cold in London." %}
 
 This implementation gives a huge flexibility to set up more complex handlers such as scheduling flights or ask for market stock prices.
 
