@@ -310,6 +310,11 @@ h6 {
   ul,
   ol {
     margin-top: 0;
+
+    li {
+      list-style: circle;
+      overflow-x: visible;
+    }
   }
 
   blockquote {
