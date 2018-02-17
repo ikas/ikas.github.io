@@ -45,8 +45,8 @@ a {
   display: inline-block;
   color: $theme-default;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: #fc0d1c;
+  background-color: $theme-white;
+  border-color: $theme-secondary;
   border-style: solid;
   border-width: 2px;
   border-radius: 0.3rem;
@@ -70,7 +70,6 @@ a {
 
   @include small {
     display: block;
-    width: 100%;
     padding: 0.75rem;
     font-size: 0.9rem;
   }
@@ -80,6 +79,7 @@ a {
     border-radius: 50%;
     background-color: $theme-white;
     color: $theme-secondary;
+    padding: 0.9rem;
 
     &:hover {
       color: $theme-white;
@@ -87,20 +87,34 @@ a {
     }
 
     @include large {
-      height: 3.5rem;
-      width: 3.5rem;
       overflow-y: hidden;
     }
 
-    @include medium {
-      height: 3rem;
-      width: 3rem;
-    }
+    i.fa {
+      vertical-align: 0;
 
-    @include small {
-      height: 2.5rem;
-      width: 2.5rem;
+      @include large {
+        font-size: 1.6em;
+        line-height: 1.1em;
+      }
+
+      @include medium {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      @include small {
+        font-size: 1.3333rem;
+        line-height: 1.2rem;
+        vertical-align: -15%;
+      }
     }
+  }
+
+  &.btn-primary {
+    background-color: $theme-secondary;
+    border: none;
+    color: $theme-white;
   }
 }
 
@@ -119,7 +133,7 @@ strong {
   }
 
   @include medium {
-    padding: 8rem 4rem;
+    padding: 8rem 2rem;
   }
 
   @include small {
@@ -173,26 +187,11 @@ strong {
   }
 }
 
-// Font awesome icons
-i.fa {
-  vertical-align: 0;
 
-  @include large {
-    font-size: 1.6em;
-    line-height: 1.1em;
-  }
-
-  @include medium {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-
-  @include small {
-    font-size: 1.3333rem;
-    line-height: 1.2rem;
-  }
+svg.fa-fw {
+  margin-bottom: 0;
+  vertical-align: -15%;
 }
-
 
 h1,
 h2,
@@ -403,7 +402,9 @@ h6 {
       display: block;
       text-decoration: none;
       text-transform: uppercase;
-      padding: 1rem 2rem;
+      padding: 0.7rem 1rem;
+      font-family: Inconsolata;
+      font-size: 1.3rem;
 
       @include small {
         padding: 1rem 1rem;
@@ -440,43 +441,21 @@ h6 {
   }
 }
 
-.article-author {
-  color: $theme-default;
-}
-
-.article-date {
-  font-size: 14px;
-}
-
-.article-meta-info {
-  margin-bottom: 25px;
-}
-
-.article-content {
-  text-align: justify;
-}
-
 
 // Home social icons
 .social-icons {
   display: flex;
   justify-content: left;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
 
   & > * {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0;
+    margin-right: 2rem;
 
     @include small {
-      margin-left: 0.75rem;
-      margin-right: 0.75rem;
-    }
-
-    &:first-of-type {
-      margin-left: 0;
+      margin-right: 0.7rem;
     }
 
     &:last-of-type {
@@ -493,6 +472,7 @@ h6 {
 
   @include medium {
     flex-direction: column;
+    margin: 4rem 2rem;
   }
 
   @include small {
@@ -561,10 +541,10 @@ h6 {
 
     &.latest-posts-container {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
 
-      @include large {
-        flex-direction: row;
+      @include small {
+      flex-direction: column;
       }
 
       .article-container {
@@ -667,3 +647,4 @@ div.image-container {
 }
 
 @import "timeline";
+@import "post";

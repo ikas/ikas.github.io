@@ -11,6 +11,10 @@ $dot-diameter: 10px;
   padding: 6rem 4rem;
   position: relative;
 
+  @include medium {
+    padding: 6rem 2rem;
+  }
+
   @include small {
     padding: 4rem 1rem;
   }
@@ -64,6 +68,10 @@ $dot-diameter: 10px;
       border-radius:100%;
       top: 15%;
       right: -$dot-diameter;
+
+      @include medium {
+        right: -21px;
+      }
 
       @include small {
         right: -27px;
