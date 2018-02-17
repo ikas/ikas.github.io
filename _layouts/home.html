@@ -39,7 +39,7 @@ layout: default
   <div class="home-content latest-posts-container" data-aos="fade-left">
     {% for post in site.posts limit:3 %}
       <a class="article-container" href="{{ post.url | absolute_url}}">
-        <div style="background-image: url('{{ post.image | default: '/assets/img/header.jpg' | absolute_url }}');background-position: bottom;" class="article-image"></div>
+        <div style="background-image: url('{{ post.thumb | default: post.image | default: '/assets/img/post/header.jpg' | absolute_url }}');background-position: bottom;" class="article-image"></div>
         <span class="article-title">{{ post.title }}</span>
         <span class="article-short-desc">{{ post.short_description }}</span>
       </a>

@@ -3,7 +3,7 @@ title:  "My Dev Work Environment"
 date:   2018-01-23 19:00:00 +0000
 author: "Henrique Pacheco"
 layout: post
-image: assets/img/devenv.jpg
+image: assets/img/posts/devenv.jpg
 short_description: "The power of a Unix terminal is still unreachable!"
 categories: Tech
 ---
