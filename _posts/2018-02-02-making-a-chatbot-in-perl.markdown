@@ -4,6 +4,7 @@ date:   2018-02-02 17:00:00 +0000
 author: "Henrique Pacheco"
 layout: post
 image: assets/img/posts/carson.jpg
+thumb: assets/img/posts/thumbs/carson.jpg
 short_description: "How we implemented a chatbot to help us on our daily tasks."
 categories: Tech
 ---

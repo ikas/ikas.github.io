@@ -4,6 +4,7 @@ date:   2018-01-23 19:00:00 +0000
 author: "Henrique Pacheco"
 layout: post
 image: assets/img/posts/devenv.jpg
+thumb: assets/img/posts/thumbs/devenv.jpg
 short_description: "The power of a Unix terminal is still unreachable!"
 categories: Tech
 ---

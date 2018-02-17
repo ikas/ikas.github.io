@@ -4,7 +4,7 @@ date:   2018-02-16 12:00:00 +0000
 author: "Henrique Pacheco"
 layout: post
 image: assets/img/posts/sapiens.jpg
-thumb: assets/img/posts/sapiens-thumb.jpg
+thumb: assets/img/posts/thumbs/sapiens.jpg
 short_description: "A magnificent journey through the history of humankind."
 categories: Books
 ---
