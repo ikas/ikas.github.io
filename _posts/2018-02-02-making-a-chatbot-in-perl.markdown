@@ -10,7 +10,7 @@ categories: Tech
 ---
 
 
-Hey :) me and my girfriend Mariana Capelo have been attending Natural Language Processing classes at University of Minho, and as a practical project, we decided to implement a simple chatbot.
+Hey :) me and my girfriend [Mariana Capelo][mary-link] have been attending Natural Language Processing classes at University of Minho, and as a practical project, we decided to implement a simple chatbot.
 
 Our main goal was to make a command line tool that was able to, first of all, **understand natural language** (i.e. sentences written in a command-line tool resembling human language). It was important for it to have a useful application on our daily lives, and at the same time, **extensible**, so that we could iterate incrementing its features. In order to achieve this, we decided to build a tool that would base itself in a script, using it to translate input into commands and properly execute them. Our main inspiration was Mr. Carson, the butler on the TV series [Downtown Abbey][downtown-link], and for that reason, we called the developed Perl module **Carson::Bot**.
 
@@ -78,3 +78,4 @@ I hope you have enjoyed this post! You can take a look at the source code of Mr.
 [freeling-link]: http://nlp.lsi.upc.edu/freeling/node/1
 [bitbucket-link]: https://bitbucket.org/marianacapelo/spln/src/3a48aceb6c14fb4559a4f78b7b3b5db904218cae/pl2/?at=master
 [downtown-link]: http://www.imdb.com/title/tt1606375/
+[mary-link]: http://marianacapelo.com
