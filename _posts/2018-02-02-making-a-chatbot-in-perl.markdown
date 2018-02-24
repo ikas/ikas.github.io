@@ -6,7 +6,7 @@ layout: post
 image: assets/img/posts/carson.jpg
 thumb: assets/img/posts/thumbs/carson.jpg
 short_description: "How we implemented a chatbot to help us on our daily tasks."
-categories: Tech
+category: Tech
 ---
 
 

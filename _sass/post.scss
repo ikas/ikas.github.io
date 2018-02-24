@@ -18,14 +18,19 @@
     .article-date {
         font-size: 14px;
     }
+}
 
-    span.category-X {
-        border: 2px solid $theme-secondary;
-        border-radius: 3px;
-        background-color: $theme-secondary;
-        padding: 0.2rem;
-        line-height: 3rem;
-        color: $theme-white;
+span.category-label {
+    border: 2px solid $theme-secondary;
+    border-radius: 3px;
+    background-color: $theme-secondary;
+    padding: 0.2rem;
+    line-height: 3rem;
+    color: $theme-white;
+
+    &.category-books {
+        background-color: #0D9AAC;
+        border-color: #0D9AAC;
     }
 }
 

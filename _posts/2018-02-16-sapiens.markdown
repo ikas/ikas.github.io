@@ -6,7 +6,7 @@ layout: post
 image: assets/img/posts/sapiens.jpg
 thumb: assets/img/posts/thumbs/sapiens.jpg
 short_description: "A magnificent journey through the history of humankind."
-categories: Books
+category: Books
 ---
 
 {% include image.html url="/assets/img/posts/sapeins-book-cover.jpg" description="Sapiens - A Brief History of Humankind (book cover)." width="360" %}

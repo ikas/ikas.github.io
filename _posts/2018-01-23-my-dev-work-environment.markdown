@@ -6,7 +6,7 @@ layout: post
 image: assets/img/posts/devenv.jpg
 thumb: assets/img/posts/thumbs/devenv.jpg
 short_description: "The power of a Unix terminal is still unreachable!"
-categories: Tech
+category: Tech
 ---
 
 Hey :)

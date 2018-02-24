@@ -17,7 +17,7 @@ layout: default
     <span class="article-author">{{ page.author }}</span><br>
     <span class="article-date">{{ page.date | date_to_string }}</span>
     <div class="article-categories">
-      <span class="category-X">{{ page.categories }}</span>
+      <span class="category-label category-{{ page.category | downcase }}">{{ page.category }}</span>
     </div>
   </div>
 
