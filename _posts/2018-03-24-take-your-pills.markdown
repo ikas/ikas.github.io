@@ -13,7 +13,7 @@ category: Documentaries
 
 ## What is the effect of Adderall (and similar stimulants)?
 
-[Adderall's][adderall-link] main ingredient is [amphetamine][amphetamine-link], a stimulant which, in short-term, induces the taker into a state of **excitement, euphoria, power, increased concentration and quicker reaction times**. Amphetamines have been around for a long time, and they are usually prescribed as a medicine for attention-deficit disorder (ADD), mostly in infants. However, most recently, its usage has increased in many environments (mainly in the United States) such as univeristies, high-pressure jobs or professional sports leagues, due to the competitive advantage they bring.
+[Adderall's][adderall-link] main ingredient is [amphetamine][amphetamine-link], a stimulant which, in short-term, induces the taker into a state of **excitement, euphoria, power, increased concentration and quicker reaction times**. Amphetamines have been around for a long time, and they are usually prescribed as a medicine for attention-deficit disorder (ADD), mostly in infants. However, recently, its usage has increased in many environments (mainly in the United States) such as univeristies, high-pressure jobs or professional sports leagues, due to the competitive advantage they bring.
 
 Under the effects of Adderall, students have improved concentration rates when studying, employees are able to work for longer periods without need to rest and athletes experience significant improvements on their performance and reflexes. **In highly competitive environments, having such capabilities can certainly be a stategic advantage over the competition.**
 
