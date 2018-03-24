@@ -28,7 +28,7 @@ span.category-label {
     line-height: 3rem;
     color: $theme-white;
 
-    &.category-books {
+    &.category-books, &.category-documentaries {
         background-color: #0D9AAC;
         border-color: #0D9AAC;
     }
