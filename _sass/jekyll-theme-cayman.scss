@@ -74,43 +74,6 @@ a {
     font-size: 0.9rem;
   }
 
-  &.btn-icon {
-    border: none;
-    border-radius: 50%;
-    background-color: $theme-white;
-    color: $theme-secondary;
-    padding: 0.9rem;
-
-    &:hover {
-      color: $theme-white;
-      background-color: $theme-secondary;
-    }
-
-    @include large {
-      overflow-y: hidden;
-    }
-
-    i.fa {
-      vertical-align: 0;
-
-      @include large {
-        font-size: 1.6em;
-        line-height: 1.1em;
-      }
-
-      @include medium {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-      }
-
-      @include small {
-        font-size: 1.3333rem;
-        line-height: 1.2rem;
-        vertical-align: -15%;
-      }
-    }
-  }
-
   &.btn-primary {
     background-color: $theme-secondary;
     border: none;
@@ -118,8 +81,7 @@ a {
   }
 }
 
-b,
-strong {
+b, strong {
   color: $theme-default;
 }
 
@@ -187,10 +149,8 @@ strong {
   }
 }
 
-
-svg.fa-fw {
-  margin-bottom: 0;
-  vertical-align: -15%;
+svg.left-margin {
+  margin-left: 15px;
 }
 
 h1,
@@ -443,29 +403,6 @@ h6 {
 
   @include small {
     width: 100%;
-  }
-}
-
-
-// Home social icons
-.social-icons {
-  display: flex;
-  justify-content: left;
-  margin-top: 4rem;
-
-  & > * {
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-
-    margin-left: 0;
-    margin-right: 2rem;
-
-    @include small {
-      margin-right: 0.7rem;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 }
 

@@ -12,6 +12,8 @@ gem "jekyll", "~> 3.6.0"
 
 gem "jekyll-theme-awesome"
 
+gem 'jekyll-multiple-languages-plugin'
+
 gem "github-pages", group: :jekyll_plugins
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
