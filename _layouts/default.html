@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ page.language }}">
   <head>
     {% include ga.html %}
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
+    <meta name="description" content="{{ page.description[page.language] | default: site.description[page.language] }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ca2132">
     <link defer href="https://fonts.googleapis.com/css?family=Inconsolata|Lato:400,700" rel="stylesheet">
@@ -27,6 +27,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
+    {% include header.html %}
     {{ content }}
     {% include footer.html %}
     <script defer src="/assets/javascripts/bundle.js" charset="utf-8"></script>

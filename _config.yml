@@ -15,8 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: Henrique Pacheco
 email: henriquejcpacheco@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I am Henrique Pacheco, 24 years old, software engineer. I love coding and I blog as a hobby.
+description:
+  en: I am Henrique Pacheco, 24 years old, software engineer. I love coding and I blog as a hobby.
+  pt: Olá, o meu nome é Henrique Pacheco, tenho 24 anos e sou engenheiro de software. Adoro programar e sou blogger nos tempos livres.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://henriquepacheco.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -31,10 +32,6 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-multiple-languages-plugin
-
-languages: ["en", "pt"]
-exclude_from_localizations: ["javascript", "images", "css"]
 
 defaults:
   - scope:
@@ -45,15 +42,3 @@ defaults:
 google_analytics: UA-85742872-1
 
 exclude: ['node_modules']
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

@@ -351,6 +351,7 @@ h6 {
   position: fixed;
   width: 100%;
   background-color: $theme-secondary;
+  z-index: 1000;
 
   .main-nav {
     display: flex;
@@ -375,6 +376,10 @@ h6 {
         padding: 1rem 1rem;
       }
     }
+  }
+
+  .language-switcher {
+    display: flex;
   }
 }
 

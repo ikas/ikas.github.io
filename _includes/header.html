@@ -1,10 +1,22 @@
 <nav
   class="header-nav"
   data-aos="fade-down"
-  data-aos-anchor-placement="top-center"
-  data-aos-anchor=".main-content"
+  data-aos-offset="500"
+  data-aos-anchor-placement="top-top"
+  data-aos-anchor="body"
+  data-aos-once="true"
 >
     <ul class="main-nav">
       <li><a href="/" class="logo">{{ site.title }}</a></li>
+
+      <li class="language-switcher">
+        {% if page.name contains "index" %}
+          <a class="en" href="{{ site.baseurl }}/">EN</a>
+          <a class="pt" href="{{ site.baseurl | append: "/pt" }}">PT</a>
+        {% else %}
+          <a class="en" href="{{ site.baseurl | append: page.handle }}">EN</a>
+          <a class="pt" href="{{ site.baseurl | append: "/pt" | append: page.handle }}">PT</a>
+        {% endif %}
+      </li>
     </ul>
 </nav>
