@@ -1,5 +1,6 @@
 ---
 title:  "Hello, world!"
+language: pt
 date:   2018-01-14 19:00:00 +0000
 author: "Henrique Pacheco"
 layout: post

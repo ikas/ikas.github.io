@@ -1,5 +1,6 @@
 ---
 title:  "My Dev Work Environment"
+language: en
 date:   2018-01-23 19:00:00 +0000
 author: "Henrique Pacheco"
 layout: post

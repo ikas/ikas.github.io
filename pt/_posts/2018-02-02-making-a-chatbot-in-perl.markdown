@@ -1,5 +1,6 @@
 ---
 title:  "Carson, the bot: implementing a chatbot"
+language: pt
 date:   2018-02-02 17:00:00 +0000
 author: "Henrique Pacheco"
 layout: post

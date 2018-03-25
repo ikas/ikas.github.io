@@ -1,5 +1,6 @@
 ---
 title: "Take your pills (Documentary review)"
+language: en
 date: 2018-03-24 17:00:00 +0000
 author: "Henrique Pacheco"
 layout: post
