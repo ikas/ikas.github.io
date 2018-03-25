@@ -1,37 +1,36 @@
 ---
-title: "Take your pills (Documentary review)"
+title: "\"Receita para a perfeição\" (Review de documentário)"
 language: pt
 date: 2018-03-24 17:00:00 +0000
 author: "Henrique Pacheco"
 layout: post
 image: assets/img/posts/take-your-pills.jpg
 thumb: assets/img/posts/thumbs/take-your-pills.jpg
-short_description: "A take on the growing dependency on \"cognitive enhancement\" meds."
-category: Documentaries
+short_description: "Um \"take\" sobre a crescente dependência de medicamentos de \"melhoramento cognitivo\"."
+category: Documentarios
 ---
 
-[Take your pills][pills-link], released on March 16th on [Netflix][pills-netflix-link], is an entertaining take on the growing usage of prescrption drugs such as [Adderall][adderall-link] or [Ritalin][ritalin-link] for performance improvements on the taker's daily lives. The documentary raises thought-provoking interesting questions about the way we as a society view our daily lives and the concept of success.
+["Take your pills"][pills-link], lançado no dia 16 de Março no [Netflix][pills-netflix-link], proporciona uma visão interessante sobre a crescente utilização de medicamentos sujeitos a receita médica como [Adderall][adderall-link] ou [Ritalin][ritalin-link], com o objetivo de melhorar a performance de quem os toma no dia-a-dia. O documentário levanta questões que nos deixam a pensar acerca da maneira como a sociedade em que vivemos vê o conceito de sucesso e o stress das nossas vidas diárias.
 
-## What is the effect of Adderall (and similar stimulants)?
+## Qual é o efeito de Adderall (e estimulantes semelhantes)?
 
-[Adderall's][adderall-link] main ingredient is [amphetamine][amphetamine-link], a stimulant which, in short-term, induces the taker into a state of **excitement, euphoria, power, increased concentration and quicker reaction times**. Amphetamines have been around for a long time, and they are usually prescribed as a medicine for attention-deficit disorder (ADD), mostly in infants. However, recently, its usage has increased in many environments (mainly in the United States) such as univeristies, high-pressure jobs or professional sports leagues, due to the competitive advantage they bring.
+[Anfetamina][amphetamine-link] é o ingrediente principal de [Adderall][adderall-link], um estimulante que, a curto-prazo, induz o tomador num estado de  **excitação, euforia, sensação de poder, graus de concentração mais elevados e tempos de reação mais rápidos**. Compostos químicos como as anfetaminas existem há várias décadas, e são usualmente prescritas como medicamento para combater défices de atenção, especialmente em crianças. No entanto, recentemente, o consumo de anfetaminas tem aumentado em diferentes ambientes (maioritariamente nos Estados Unidos) como universidades, empregos de alta pressão ou desportos profissionais, devido à vantagem competitiva que trazem.
 
-Under the effects of Adderall, students have improved concentration rates when studying, employees are able to work for longer periods without need to rest and athletes experience significant improvements on their performance and reflexes. **In highly competitive environments, having such capabilities can certainly be a stategic advantage over the competition.**
-
-
-## The pros are straight-forward, but what are the cons?
-
-The advantages of the usage of amphetamines are pretty straight-forward. Who wouldn't want to be able to pull all-nighters without feeling exhausted? Who wouldn't want to be able to focus on boring tasks that need to be done for hours and hours? [Take your pills][pills-link] is pretty clear about this, **but it does not give a clear view of what are the disadvantages, mainly the long-term ones.**
-
-Aside from the obvious addiction risk (for all purposes, amphetamines are drugs), respiratory problems, paranoia and psychosis are amongst the list of possible long-term effects. And though these are referred along the documentary, their ramifications and examples are not explored, leaving a significant gap in the whole analysis.
+Sob os efeitos de Adderall, estudantes têm taxas de concentração maiores quando estudam, trabalhadores conseguem aguentar períodos mais longos sem necessidade de descansar e atletas experienciam melhorias nas suas performances e reflexos. **Em ambientes altamente competitivos, ter capacidades como estas pode certamente ser uma vantagem estratégica considerável sobre a competição.**
 
 
-## The bigger picture
+## As vantagens são evidentes, mas e as desvantagens?
 
-Setting aside pros and cons of amphetamine usage, there are still a lot of questions that are left unanswered. The most important one is certainly **what the hell is going on with our society**, where the successful student is the one that is physically able to spend more time studying, or the successful employee is the one that actually thrives under pressure, whatever the cost? **Why are we so heavily focused on "being successful", to the point of needing daily doses  of "cognitive enhancement" to deal with the stress of our lives?**
+As vantagens da utilização de anfetaminas são bastante evidentes. Quem é que não gostaria de aguentar diretas sem se sentir exausto, ou de manter a concentração em tarefas chatas e aborrecidas que precisam de ser feitas, durante horas a fio? ["Take your pills"][pills-link] é bastante claro acerca disto, **mas não fornece uma visão clara das desvantagens da utilização, maioritariamente das desvantagens a longo prazo.**
 
-[Take your pills][pills-link] does not have an answer to these questions, but it does the important job of raising them, and that is probably the most brilliant aspect of this documentary.
+Pondo de parte o risco óbvio de dependência (para todos os efeitos, anfetamina é uma droga), problemas respiratórios, ataques de paranóia e psicoses cosntam da lista de possíveis efeitos a longo prazo. E apesar destes efeitos serem referidos ao longo do documentário, as suas ramificações e casos de exemplo não são explorados, deixando assim uma falha significativa na análise que este faz ao problema.
 
+
+## Um panorama maior
+
+Pondo de parte as vantagens e desvantagens da utilização de anfetaminas, ainda existem imensas questões que são deixadas sem resposta. Uma das mais importantes, certamente, é **o que raio se passa com a sociedade em que vivemos**, onde o bom aluno é aquele que é fisicamente capaz de passar mais tempo a estudar, ou o bom trabalhador é aquele que na verdade consegue ter melhor rendimento sob pressão, não importando como o consegue? **Porque é que estamos focados de tal forma em "ter sucesso", ao ponto de precisarmos de doses diárias de "melhoramento cognitivo" para conseguir lidar com o stress do nosso dia-a-dia?**
+
+["Take your pills"][pills-link] não traz a resposta para estas perguntas, mas faz o importante papel de as levantar, e esse é provavelmente o aspeto mais brilhante deste documentário.
 
 
 [pills-link]: http://www.imdb.com/title/tt7983844/
